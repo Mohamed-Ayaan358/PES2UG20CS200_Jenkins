@@ -7,9 +7,10 @@ pipeline{
         }
       }
       stage('Test') {
-        steps
+        steps{
           sh './app'
         }
+      }
       stage('Deploy') {
         steps {
           sh 'Its done'
